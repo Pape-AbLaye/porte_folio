@@ -1,290 +1,287 @@
-<!--This code was created by @WerDeveloper.
-Unauthorized copying, distribution, or modification of this code, in whole or in part, is strictly prohibited without prior written permission.
-Please do not remove or alter the credit to the original creator. If you wish to use this code for personal or commercial purposes, kindly contact the creator for permissions.
-Thank you for respecting the work and effort that went into creating this code. -->
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeRdevelopers</title>
-    <link rel="icon" type="image/png" href="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Papa Abdoulaye Ndiaye — L@yeTech | Ingénieur Logiciel & Data</title>
+<meta name="description" content="Portfolio de Papa Abdoulaye Ndiaye (L@yeTech), étudiant en Master 2 Génie Logiciel et Gestion de Données à l'Université Gaston Berger, passionné par l'IA.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="background-animation"></div>
-    <div class="floating-elements" id="floatingElements"></div>
-    <nav id="mainNav">
-        <div class="container nav-container">
-            <a href="#" class="logo">WeRDevelopers</a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#education">Education</a>
-                <a href="#journey">Journey</a>
-                <a href="#skills">Skills</a>
+
+<div class="bg-grid"></div>
+
+<nav id="mainNav">
+    <div class="container nav-container">
+        <a href="#accueil" class="logo">L@ye<span>Tech</span></a>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Me contacter</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#accueil">Accueil</a>
+        <a href="#formation">Formation</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="accueil" class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text reveal">
+            <span class="eyebrow">Disponible pour une alternance / un stage</span>
+            <h1>Je transforme des données en produits <span class="accent">logiciels intelligents</span>.</h1>
+            <p class="hero-lede">
+                Papa Abdoulaye Ndiaye, alias <strong>L@yeTech</strong> — étudiant en Master 2 Génie Logiciel
+                et Gestion de Données à l'Université Gaston Berger. Je conçois des applications web, mobiles
+                et des architectures backend, avec un intérêt particulier pour l'IA et les modèles de langage.
+            </p>
+            <div class="hero-actions">
+                <a href="#projets" class="btn-primary"><i class="fas fa-diagram-project"></i> Voir mes projets</a>
+                <a href="#contact" class="btn-ghost"><i class="fas fa-paper-plane"></i> Discutons</a>
             </div>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-
-        <div class="mobile-nav" id="mobileNav">
-            <a href="#home" onclick="closeMobileMenu()">
-                <i class="fas fa-home"></i> Home
-            </a>
-            <a href="#education" onclick="closeMobileMenu()">
-                <i class="fas fa-graduation-cap"></i> Education
-            </a>
-            <a href="#journey" onclick="closeMobileMenu()">
-                <i class="fas fa-road"></i> Journey
-            </a>
-            <a href="#skills" onclick="closeMobileMenu()">
-                <i class="fas fa-code"></i> Skills
-            </a>
-        </div>
-
-        <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text fade-in">
-                    <h1>Hey! This is <span>WeRDeveloper</span></h1>
-                    <p>A web developer who loves creating websites and Telegram bots. I focus on clean design, smooth functionality, and smart automation to make things easier.</p>
-                    <a href="#journey" class="cta-button">Explore My Journey</a>
-                </div>
-                <div class="hero-visual fade-in">
-                    <div class="floating-card">
-                        <div class="card-content">
-                            <div class="profile-avatar">
-                                <img src="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png" alt="Profile Image">
-                            </div>
-                            <h3>Deep AKA "WeRDeveloper"</h3>
-                            <p>Full Stack Developer</p>
-                            <div class="location-chip">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Tripura, India</span>
-                            </div>
-                            <div
-                                style="margin-top: 20px; padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; width: 100%;">
-                                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Coding Since:</strong></p>
-                                <p style="font-size: 1.2rem; font-weight: 600; color: var(--accent);">2018</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-meta">
+                <div class="hero-meta-item"><strong>M2</strong>Gestion de Données<br>& Génie Logiciel</div>
+                <div class="hero-meta-item"><strong>Des+</strong>Projets réalisés</div>
+                <div class="hero-meta-item"><strong>SN</strong>Rufisque, Dakar</div>
             </div>
         </div>
-
-        <div class="scroll-down">
-            <a href="#education">
-                <i class="fas fa-chevron-down"></i>
-                <span>Scroll Down</span>
-            </a>
+        <div class="hero-visual reveal">
+            <canvas id="nodeCanvas"></canvas>
+            <div class="hero-visual-frame"></div>
         </div>
-    </section>
+    </div>
+    <div class="scroll-cue"><span class="line"></span>Défiler</div>
+</section>
 
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Education Status</h2>
-                <p>You can read this to know more about me.</p>
+<!-- ============ FORMATION ============ -->
+<section id="formation">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="tag">Parcours académique</span>
+                <h2>Formation</h2>
             </div>
-            <div class="cards-grid">
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="card-title">Bachelor of Computer Applications (BCA)</h3>
-                    <p>I have completed my BCA from Techno College Of Engineering Agartala (TCEA) and am currently working as a Software Engineer in a private organization.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--accent); border-radius: 50%;"></div>
-                        <span>Status: <strong>Corporate employee</strong></span>
-                    </div>
-                </div>
-
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="card-title">Self-Taught Developer</h3>
-                    <p>Learning programming through online resources, hands-on projects, and consistent practice.
-                        Balancing academic studies with coding passion.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--primary); border-radius: 50%;"></div>
-                        <span>Learning Method: <strong>Online & Self-Study</strong></span>
-                    </div>
-                </div>
-
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3 class="card-title">Future Goals</h3>
-                    <p>My future goal is to make my parents happy and provide them with a good and luxurious life. My biggest dream is to see them happy and fulfilled.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--secondary); border-radius: 50%;"></div>
-                        <span>Status: <strong>Work in progress</strong></span>
-                    </div>
-                </div>
-
-            </div>
+            <p>Un cursus construit à l'Université Gaston Berger, de la base scientifique à la spécialisation en ingénierie logicielle.</p>
         </div>
-    </section>
-
-    <section id="journey" class="journey">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>My Coding Journey</h2>
-                <p>Started in 2019 and still going strong. Here's how my development journey has progressed.</p>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-date">2021 — 2022</div>
+                <div class="timeline-body">
+                    <h3>Licence 1</h3>
+                    <span class="school">Université Gaston Berger</span>
+                    <p>Mathématiques, physique et informatique — les fondamentaux scientifiques qui ont posé les bases de mon parcours en ingénierie.</p>
+                </div>
             </div>
-
-            <div class="journey-timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2018</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">The Beginning</h3>
-                        <p>After completing my 12th board exams, I passed with 77.8% in the Science stream. Then I got admission to Techno College of Agartala. During that time, I also started learning HTML, CSS, JavaScript, etc. However, I was very confused at that phase of my life.</p>
-                    </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-date">2022 — 2024</div>
+                <div class="timeline-body">
+                    <h3>Licence 2 — Master 1</h3>
+                    <span class="school">Université Gaston Berger</span>
+                    <p>Spécialisation en informatique, orientée Gestion de Données et Ingénierie Logicielle. Approfondissement du développement web, mobile et des architectures backend.</p>
                 </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2021</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Exploring Languages</h3>
-                        <p>Expanded my knowledge by learning Python, Java, and C++. Explored core programming concepts
-                            like data structures, algorithms, and object-oriented programming.</p>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2022</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Backend</h3>
-                        <p>Slowly, I started moving forward in full-stack development. There were many technologies and languages involved, such as PHP, React js, Django, Flask, and more...</p>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2025</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Current Focus</h3>
-                        <p>After graduation, I got a job at a private organization, and I feel this marked an important step in my journey. I received an offer from a private company on 7th September 2025. Now, I am working there and focusing on my future goals.</p>
-                    </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-date"><span class="current">2024 — 2026 · en cours</span></div>
+                <div class="timeline-body">
+                    <h3>Master 2 — Gestion de Données et Ingénierie Logicielle</h3>
+                    <span class="school">Université Gaston Berger</span>
+                    <p>Approfondissement en data mining, text mining et perceptron multicouche, avec une exploration des Large Language Models (LLM) et du prompt engineering. Passionné par l'IA appliquée à des problèmes concrets.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Programming Skills</h2>
-                <p>Languages and technologies I've learned since starting my journey in 2022</p>
+<!-- ============ PROJETS ============ -->
+<section id="projets">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="tag">Réalisations</span>
+                <h2>Projets</h2>
+            </div>
+            <p>Des projets personnels au service de la fibre entrepreneuriale et de la promotion du patrimoine sénégalais dans la tech.</p>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card featured reveal">
+                <div class="index">01</div>
+                <h3>TerangaCraft</h3>
+                <p>Plateforme multi-rôles de tourisme et d'artisanat sénégalais. Frontend Angular (composants standalone), backend Spring Boot / JPA / PostgreSQL, authentification et gestion des rôles (Touriste, Artisan, Prestataire, Administrateur) via Keycloak.</p>
+                <div class="project-tags">
+                    <span class="tag-pill">Angular</span>
+                    <span class="tag-pill">Spring Boot</span>
+                    <span class="tag-pill">PostgreSQL</span>
+                    <span class="tag-pill">Keycloak / JWT</span>
+                </div>
             </div>
 
-            <div class="skills-container">
-
-                <div class="skill-category fade-in">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Full-stack</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Broadening my skillset</p>
-                        </div>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">PHP</div>
-                        <div class="skill-item">React js</div>
-                        <div class="skill-item">Django</div>
-                        <div class="skill-item">Java</div>
-                        <div class="skill-item">Flask</div>
-                        <div class="skill-item">Git</div>
-                    </div>
-                    <p style="margin-top: 20px;">Now, as a full-stack developer, I can build websites from frontend to backend. I enjoy creating dynamic, user-friendly web applications and constantly improving my skills with new technologies.</p>
+            <div class="project-card reveal">
+                <div class="index">02</div>
+                <h3>FuelGuard</h3>
+                <p>Système de surveillance de carburant et de suivi GPS de flotte de véhicules basé sur l'IoT, pensé pour la gestion en temps réel d'un parc de véhicules.</p>
+                <div class="project-tags">
+                    <span class="tag-pill">IoT</span>
+                    <span class="tag-pill">GPS Tracking</span>
                 </div>
+            </div>
 
-                <div class="skill-category fade-in">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Python</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">My primary language</p>
-                        </div>
-                    </div>
-                    <p>Python is my favorite and most proficient language. I've used it for various projects including
-                        data analysis, automation, and web development.</p>
-                    <div
-                        style="margin-top: 20px; padding: 15px; background: rgba(48, 105, 152, 0.1); border-radius: 10px; border-left: 4px solid var(--python-blue);">
-                        <p style="font-size: 0.9rem; color: white;"><strong>Why Python?</strong> Its simplicity,
-                            readability, and vast ecosystem make it perfect for turning ideas into solutions quickly.
-                        </p>
-                    </div>
+            <div class="project-card reveal">
+                <div class="index">03</div>
+                <h3>Migration vers les microservices</h3>
+                <p>Refonte progressive d'un monolithe Spring Boot (tourisme_api, ~15 modules métier) vers une architecture en six microservices : clients, produits, tourisme, réservation, paiement et notification.</p>
+                <div class="project-tags">
+                    <span class="tag-pill">Spring Boot</span>
+                    <span class="tag-pill">Microservices</span>
+                    <span class="tag-pill">Eureka</span>
                 </div>
+            </div>
 
-                <div class="skill-category fade-in">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Learning Path</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Continuous growth</p>
-                        </div>
-                    </div>
-                    <p>My journey has been focused on practical learning through projects. Each language has contributed
-                        to my growth as a developer.</p>
-                    <div
-                        style="margin-top: 20px; padding: 15px; background: rgba(99, 102, 241, 0.1); border-radius: 10px;">
-                        <p style="font-size: 0.9rem; color: white;"><strong>Next Steps:</strong> As I mention my future goals, I also want to share some ideas and my mistakes as a YouTuber.</p>
-                    </div>
+            <div class="project-card reveal">
+                <div class="index">04</div>
+                <h3>API sécurisée</h3>
+                <p>Conception d'une API REST sécurisée avec authentification basée sur JWT et gestion des identités via Keycloak, consommée par un frontend Angular.</p>
+                <div class="project-tags">
+                    <span class="tag-pill">Spring Boot</span>
+                    <span class="tag-pill">JWT</span>
+                    <span class="tag-pill">Keycloak</span>
                 </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="index">05</div>
+                <h3>Plateforme d'inscription universitaire</h3>
+                <p>Backend PHP pour la gestion des inscriptions et des utilisateurs, avec intégration d'une base de données MySQL.</p>
+                <div class="project-tags">
+                    <span class="tag-pill">PHP</span>
+                    <span class="tag-pill">MySQL</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="index">06</div>
+                <h3>Application mobile de revente</h3>
+                <p>Application mobile avec authentification, publication d'annonces et gestion des utilisateurs.</p>
+                <div class="project-tags">
+                    <span class="tag-pill">Flutter</span>
+                    <span class="tag-pill">Firebase</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="index">07</div>
+                <h3>Logiciel de gestion de voitures</h3>
+                <p>Application desktop avec interface graphique pour la gestion d'un parc de véhicules.</p>
+                <div class="project-tags">
+                    <span class="tag-pill">C++</span>
+                    <span class="tag-pill">Qt</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ COMPETENCES ============ -->
+<section id="competences">
+    <div class="container">
+        <div class="section-head reveal">
+            <div>
+                <span class="tag">Boîte à outils</span>
+                <h2>Compétences</h2>
+            </div>
+            <p>Du frontend à l'IA, avec une base solide en architecture et en sécurité.</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <h3>Frontend</h3>
+                <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Angular</span></div>
+            </div>
+            <div class="skill-card reveal">
+                <h3>Backend</h3>
+                <div class="skill-tags"><span>Python</span><span>PHP / Laravel</span><span>Java / Spring Boot</span></div>
+            </div>
+            <div class="skill-card reveal">
+                <h3>Mobile</h3>
+                <div class="skill-tags"><span>Flutter</span></div>
+            </div>
+            <div class="skill-card reveal">
+                <h3>Bases de données</h3>
+                <div class="skill-tags"><span>MySQL</span><span>PostgreSQL</span><span>Firebase</span></div>
+            </div>
+            <div class="skill-card reveal">
+                <h3>DevOps & Outils</h3>
+                <div class="skill-tags"><span>Docker</span><span>Git</span><span>GitHub</span></div>
+            </div>
+            <div class="skill-card reveal">
+                <h3>IA & Data</h3>
+                <div class="skill-tags"><span>LLM</span><span>Prompt Engineering</span><span>Data Mining</span><span>Text Mining</span><span>Perceptron multicouche</span></div>
+            </div>
+            <div class="skill-card reveal">
+                <h3>Concepts</h3>
+                <div class="skill-tags"><span>POO</span><span>API REST</span><span>MVC</span><span>Microservices</span></div>
+            </div>
+            <div class="skill-card reveal">
+                <h3>Sécurité & Architecture</h3>
+                <div class="skill-tags"><span>JWT</span><span>Keycloak</span><span>API REST sécurisées</span></div>
             </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h2 style="font-size: 1.8rem; margin-bottom: 10px; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; color: transparent;">
-                        <a href="https://www.youtube.com/@WeRdevelopers" style="text-decoration: none; color: inherit;">WeRDevelopers</a></h2>
-                    <p style="color: var(--gray);">A Full Stack Developer from Tripura</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                    <a href="https://telegram.me/WeRdevelopers" class="social-link"><i class="fab fa-telegram"></i></a>
-                </div>
+        <div class="languages-row reveal">
+            <div>
+                <div class="lang-bar-label"><span>Français</span><span>90%</span></div>
+                <div class="lang-bar-track"><div class="lang-bar-fill" data-width="90"></div></div>
             </div>
-            <div class="copyright">
-                <p>&copy;
-                    <script>document.write(new Date().getFullYear())</script> <b>WeRDevelopers</b>, All rights reserved.
-                </p>
+            <div>
+                <div class="lang-bar-label"><span>Anglais</span><span>78%</span></div>
+                <div class="lang-bar-track"><div class="lang-bar-fill" data-width="78"></div></div>
+            </div>
+            <div>
+                <div class="lang-bar-label"><span>Wolof</span><span>100%</span></div>
+                <div class="lang-bar-track"><div class="lang-bar-fill" data-width="100"></div></div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-panel reveal">
+            <div>
+                <h2>Construisons quelque chose ensemble.</h2>
+                <p>Ouvert aux opportunités de stage ou de collaboration autour du développement logiciel et de l'IA.</p>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:ndiaye.papa-abdoulaye@ugb.edu.sn" class="contact-link"><i class="fas fa-envelope"></i> ndiaye.papa-abdoulaye@ugb.edu.sn</a>
+                <a href="tel:+221771391623" class="contact-link"><i class="fas fa-phone"></i> +221 77 139 16 23</a>
+                <a href="https://github.com/PaAblaye" target="_blank" rel="noopener" class="contact-link"><i class="fab fa-github"></i> github.com/PaAblaye</a>
+                <span class="contact-link" style="cursor:default;"><i class="fas fa-location-dot"></i> Rufisque, Dakar, Sénégal</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-row">
+        <span>© <span id="year"></span> Papa Abdoulaye Ndiaye — L@yeTech</span>
+        <span>Conçu & codé à Saint-Louis, Sénégal</span>
+    </div>
+</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
-
-<!--This code was created by @WerDeveloper.
-Unauthorized copying, distribution, or modification of this code, in whole or in part, is strictly prohibited without prior written permission.
-Please do not remove or alter the credit to the original creator. If you wish to use this code for personal or commercial purposes, kindly contact the creator for permissions.
-Thank you for respecting the work and effort that went into creating this code. -->
