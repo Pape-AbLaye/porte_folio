@@ -86,6 +86,14 @@ const langObserver = new IntersectionObserver(entries => {
 const languagesRow = document.querySelector('.languages-row');
 if (languagesRow) langObserver.observe(languagesRow);
 
+/* ---------- Certificate image fallback ---------- */
+document.querySelectorAll('.cert-media img').forEach(img => {
+    img.addEventListener('error', () => {
+        const media = img.closest('.cert-media');
+        media.innerHTML = '<div class="cert-placeholder"><i class="fas fa-award"></i><span>Ajoutez certificat.jpeg à côté de index.html</span></div>';
+    }, { once: true });
+});
+
 /* ---------- Hero signature: animated node network ---------- */
 (function initNodeNetwork() {
     const canvas = document.getElementById('nodeCanvas');
